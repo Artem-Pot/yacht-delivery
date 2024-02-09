@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5,
 }
 @media (min-width: 768px) {
   .site-section {
-    padding: 5em 0;
+    padding: 2em 0;
   }
 }
 .site-section.site-section-sm {
@@ -1197,7 +1197,7 @@ h1, h2, h3, h4, h5,
 }
 
 .footer {
-  padding: 4rem 0;
+  padding: 1rem 0 0;
   background: #000;
   font-size: 15px;
   color: #888;
@@ -1219,7 +1219,7 @@ h1, h2, h3, h4, h5,
   text-decoration: underline;
 }
 .footer .copyright {
-  padding-top: 7rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -1437,8 +1437,7 @@ h1, h2, h3, h4, h5,
 }
 
 .header-top > .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 10px 0;
 }
 .header-top .quick-contact-icons .icon {
   margin-right: 10px;
@@ -1991,10 +1990,100 @@ h1, h2, h3, h4, h5,
 
 /*--------Пользовательские стили*/
 
+
 .text-slider_left {
     margin-left: 10px !important;
+    margin-right: auto;
+    font-weight: 400;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
 }
 
 .text-slider_right {
   margin-right: 10px !important;
+  font-weight: 400;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
+.service-29283 {
+  display: flex;
+  align-items: center;
+  flex-direction:column ;
+  gap: 15px;
+}
+
+
+.flaticon-advantages {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.flaticon-advantages_sub {
+    background: url(../images/svg/sub.svg) no-repeat center center;
+}
+
+.flaticon-advantages_capitan {
+  background: url(../images/svg/captain.svg) no-repeat center center;
+}
+
+.flaticon-advantages_bbq {
+  background: url(../images/svg/bbq.svg) no-repeat center center;
+}
+
+.flaticon-advantages_alcohol {
+  background: url(../images/svg/alcohol.svg) no-repeat center center;
+}
+
+.flaticon-advantages_gift {
+  background: url(../images/svg/gift.svg) no-repeat center center;
+}
+
+.flaticon-advantages_diving {
+  background: url(../images/svg/diving.svg) no-repeat center center;
+}
+
+.box-advantages {
+  text-align: center;
+}
+
+.box-places {
+  display: grid ;
+  align-items: stretch;
+}
+
+.text-places {
+  font-size: 14px;
+}
+
+.title-places {
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  text-align: left !important;
+  
+}
+
+.text-primary {
+  color: #999999 !important;
+}
+
+.img-primary {
+  width: 100%;
+  max-height: 200px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.col-md-12 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*------Страница о нас-----*/
+
+.site-section-about {
+  margin-top: 140px;
 }
