@@ -1988,3 +1988,13 @@ h1, h2, h3, h4, h5,
   font-size: 14px;
   color: #ccc;
 }/*# sourceMappingURL=style.css.map */
+
+/*--------Пользовательские стили*/
+
+.text-slider_left {
+    margin-left: 10px !important;
+}
+
+.text-slider_right {
+  margin-right: 10px !important;
+}
