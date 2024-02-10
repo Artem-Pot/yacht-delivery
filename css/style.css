@@ -1988,7 +1988,7 @@ h1, h2, h3, h4, h5,
   color: #ccc;
 }/*# sourceMappingURL=style.css.map */
 
-/*--------Пользовательские стили*/
+/*--------Пользовательские стили--------------------------------*/
 
 
 .text-slider_left {
@@ -2012,7 +2012,6 @@ h1, h2, h3, h4, h5,
   flex-direction:column ;
   gap: 15px;
 }
-
 
 .flaticon-advantages {
   display: block;
@@ -2044,13 +2043,30 @@ h1, h2, h3, h4, h5,
   background: url(../images/svg/diving.svg) no-repeat center center;
 }
 
+.form-control::placeholder {
+  color: rgb(222, 222, 226);
+}
+
 .box-advantages {
   text-align: center;
 }
 
 .box-places {
-  display: grid ;
+  display: grid;
   align-items: stretch;
+  position: relative;
+  transition: transform 1.5s;
+}
+
+.box-places:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.link-primary::before {
+  position: absolute;
+  content: '';
+  inset: 0;
 }
 
 .text-places {
@@ -2061,7 +2077,6 @@ h1, h2, h3, h4, h5,
   max-width: 100% !important;
   flex: 0 0 100% !important;
   text-align: left !important;
-  
 }
 
 .text-primary {
