@@ -1,0 +1,40 @@
+.site-section
+	.container
+		.row
+			.col-md-7
+				p
+					img.img-fluid(src='images/hero_1.jpg', alt='Image')
+			.col-md-5
+				//  <span class="text-serif text-primary">Забронировать</span> 
+				h3.heading-92913.text-black Забронировать яхту
+				form.row(action='#')
+					.form-group.col-md-6
+						label(for='input-1') ФИО
+						input.form-control#input-1(type='text')
+					.form-group.col-md-6
+						label(for='input-2') Номер телефона
+						input.form-control#input-2(type='text')
+					.form-group.col-md-6
+						label(for='input-3') Дата с:
+						input.form-control.datepicker#input-3(type='text')
+					.form-group.col-md-6
+						label(for='input-4') Дата по:
+						input.form-control.datepicker#input-4(type='text')
+					.form-group.col-md-12
+						label(for='input-5') Место отправления
+						select#input-5.form-control(name)
+							option(value) Хрящёвка
+							option(value) Подстёпки
+							option(value) ягодное
+							option(value) Другое
+					.form-group.col-md-6
+						label(for='input-6') Email
+						input.form-control#input-6(type='text', placeholder='info@yandex.ru')
+					.form-group.col-md-6
+						label(for='input-7') Телефон
+						input.form-control#input-7(type='text', placeholder='+71234567890')
+					.form-group.col-md-12
+						label(for='input-8') Комментарий
+						textarea#input-8.form-control(name, cols='30', rows='5')
+					.form-group.col-md-12
+						input.btn.btn-primary.py-3.px-5(type='submit', value='Отправить')

@@ -180,42 +180,9 @@
 								p.text-places Крошечный уголок рая, где природа щедро одаривает вас своими дарами. Здесь в каждой ягоде – капля нежности матери-природы, готовая растопить ваше сердце своей сладостью..
 							.ml-auto.price
 								span.bg-primary 4000 руб
-.site-section
-	.container
-		.row
-			.col-md-7
-				p
-					img.img-fluid(src='images/hero_1.jpg', alt='Image')
-			.col-md-5
-				//   <span class="text-serif text-primary">Забронировать</span> 
-				h3.heading-92913.text-black Забронировать яхту
-				form.row(action='#')
-					.form-group.col-md-6
-						label(for='input-1') Фамилия Имя
-						input.form-control#input-1(type='text', placeholder='Иванов Иван')
-					.form-group.col-md-6
-						label(for='input-2') Номер телефона
-						input.form-control#input-2(type='text', placeholder='+71234567890')
-					.form-group.col-md-6
-						label(for='input-6') Email
-						input.form-control#input-6(type='text', placeholder='info@yandex.ru')
-					.form-group.col-md-6
-						label(for='input-4') Дата
-						input.form-control.datepicker#input-4(type='text', placeholder='02/07/2024')
-					.form-group.col-md-12
-						label(for='input-5') Место отправления
-						select.form-control#input-5(name)
-							option(value) Богатырская слобода
-							option(value) Пьяный мыс
-							option(value) Замок Гарибальди
-							option(value) Золотые пески
-							option(value) Ягодное
-							option(value) Другое
-					.form-group.col-md-12
-						label(for='input-8') Комментарий
-						textarea.form-control#input-8(name, cols='30', rows='5')
-					.form-group.col-md-12
-						input.btn.btn-primary.py-3.px-5(type='submit', value='Отправить')
+
+include reservation.pug	
+
 .site-section
 	.container
 		.row.justify-content-center.mb-5
@@ -253,11 +220,4 @@
 						.text
 							strong.d-block Антон
 							//   <span>CEO and Co-Founder</span> 
-.site-section.bg-image.overlay(style='background-image: url(\'images/hero_2.jpg\');')
-	.container
-		.row.justify-content-center
-			.col-md-7.text-center
-				h2.text-white Написать Нам
-				p.lead.text-white Свяжитесь с Нами, через форму обратной связи1
-				p.mb-0
-					a.btn.btn-warning.py-3.px-5.text-white(href='#') Написать
+include feedback.pug

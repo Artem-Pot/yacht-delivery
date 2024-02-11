@@ -29,7 +29,7 @@
       <div class="header-top bg-light">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-6 col-lg-3"><a href="index.html"><img class="img-fluid" src="images/logo.png" alt="Image"></a></div>
+            <div class="col-6 col-lg-3"><a href="index.html"><img class="img-fluid img-fluid-logo" src="images/logo.png" alt="Image"></a></div>
             <div class="col-lg-3 d-none d-lg-block">
               <div class="quick-contact-icons d-flex">
                 <div class="icon align-self-start"><span class="icon-location-arrow text-primary"></span></div>
@@ -57,8 +57,8 @@
               <div class="mx-auto">
                 <nav class="site-navigation position-relative text-right" role="navigation">
                   <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
-                    <li class="active"><a class="nav-link text-left" href="index.html">На главную</a></li>
-                    <li><a class="nav-link text-left" href="#">Галерея</a></li>
+                    <li><a class="nav-link text-left" href="index.html">На главную</a></li>
+                    <li><a class="nav-link text-left" href="gallery.html">Галерея</a></li>
                     <li><a class="nav-link text-left" href="#">Места</a></li>
                     <li><a class="nav-link text-left" href="about.html">О нас</a></li>
                     <li><a class="nav-link text-left" href="#">Контакты</a></li>
@@ -286,35 +286,41 @@
               <p><img class="img-fluid" src="images/hero_1.jpg" alt="Image"></p>
             </div>
             <div class="col-md-5">
-              <!--   <span class="text-serif text-primary">Забронировать</span> -->
+              <!--  <span class="text-serif text-primary">Забронировать</span> -->
               <h3 class="heading-92913 text-black">Забронировать яхту</h3>
               <form class="row" action="#">
                 <div class="form-group col-md-6">
-                  <label for="input-1">Фамилия Имя</label>
-                  <input class="form-control" id="input-1" type="text" placeholder="Иванов Иван">
+                  <label for="input-1">ФИО</label>
+                  <input class="form-control" id="input-1" type="text">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="input-2">Номер телефона</label>
-                  <input class="form-control" id="input-2" type="text" placeholder="+71234567890">
+                  <input class="form-control" id="input-2" type="text">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="input-3">Дата с:</label>
+                  <input class="form-control datepicker" id="input-3" type="text">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="input-4">Дата по:</label>
+                  <input class="form-control datepicker" id="input-4" type="text">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="input-5">Место отправления</label>
+                  <select class="form-control" id="input-5" name>
+                    <option value>Хрящёвка</option>
+                    <option value>Подстёпки</option>
+                    <option value>ягодное</option>
+                    <option value>Другое</option>
+                  </select>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="input-6">Email</label>
                   <input class="form-control" id="input-6" type="text" placeholder="info@yandex.ru">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input-4">Дата</label>
-                  <input class="form-control datepicker" id="input-4" type="text" placeholder="02/07/2024">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="input-5">Место отправления</label>
-                  <select class="form-control" id="input-5" name>
-                    <option value>Богатырская слобода</option>
-                    <option value>Пьяный мыс</option>
-                    <option value>Замок Гарибальди</option>
-                    <option value>Золотые пески</option>
-                    <option value>Ягодное</option>
-                    <option value>Другое</option>
-                  </select>
+                  <label for="input-7">Телефон</label>
+                  <input class="form-control" id="input-7" type="text" placeholder="+71234567890">
                 </div>
                 <div class="form-group col-md-12">
                   <label for="input-8">Комментарий</label>
@@ -384,7 +390,7 @@
           <div class="row justify-content-center">
             <div class="col-md-7 text-center">
               <h2 class="text-white">Написать Нам</h2>
-              <p class="lead text-white">Свяжитесь с Нами, через форму обратной связи1</p>
+              <p class="lead text-white">Свяжитесь с Нами, через форму обратной связи</p>
               <p class="mb-0"><a class="btn btn-warning py-3 px-5 text-white" href="#">Написать</a></p>
             </div>
           </div>
@@ -394,26 +400,26 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
-              <p class="mb-4"><img class="img-fluid" src="images/logo.png" alt="Image"></p>
-              <!--   <p>Хотите с нами поплавать, тогда это к Нам</p>   -->
+              <p class="mb-4"><img class="img-fluid img-fluid-logo" src="images/logo.png" alt="Image"></p>
+              <p>Счастливая Звезда  </p>
               <!--   <p><a href="#">Learn More</a></p> -->
             </div>
             <div class="col-lg-3">
-              <h3 class="footer-heading"><span>Our Company</span></h3>
+              <h3 class="footer-heading"><span>Наша компания</span></h3>
               <ul class="list-unstyled">
-                <li><a href="#">About</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="#">Новости</a></li>
               </ul>
             </div>
             <div class="col-lg-3">
-              <h3 class="footer-heading"><span>Our Services</span></h3>
+              <h3 class="footer-heading"><span>Сервис</span></h3>
               <ul class="list-unstyled">
                 <li><a href="#">Industrial</a></li>
                 <li><a href="#">Construction</a></li>
               </ul>
             </div>
             <div class="col-lg-3">
-              <h3 class="footer-heading"><span>Contact</span></h3>
+              <h3 class="footer-heading"><span>Контакты</span></h3>
               <ul class="list-unstyled">
                 <li><a href="#">Help Center</a></li>
                 <li><a href="#">Support Community</a></li>
@@ -424,7 +430,7 @@
             <div class="col-12">
               <div class="copyright">
                 <p>Copyright ©
-                  <script>document.write(new Date().getFullYear());</script>Все права защищены.
+                  <script>document.write(new Date().getFullYear());</script>.  &nbspВсе права защищены.
                 </p>
               </div>
             </div>
