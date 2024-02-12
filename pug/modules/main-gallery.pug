@@ -2,28 +2,25 @@
 	.container
 		.row.justify-content-center.mb-5
 			.col-md-7.text-center.title-places
-				h3.heading-92913.text-black.text-center Галерея яхты Albin Scampi
+				h3.heading-92913.text-black.text-center Галерея изображений
 				//- p.text-serif.text-primary Фото галереи
 				.box-gallery
 					.gallery
-						.img-w
-							img(src="images/gallery/1.jpg" alt="")
-						.img-w
-							img(src="images/gallery/2.jpg" alt="")
-						.img-w
-							img(src="images/gallery/3.jpg" alt="")
-						.img-w
-							img(src="images/gallery/4.jpg" alt="")
-						.img-w
-							img(src="images/gallery/5.jpg" alt="")
-						.img-w
-							img(src="images/gallery/6.jpg" alt="")
-						.img-w
-							img(src="images/gallery/7.jpg" alt="")
-						.img-w
-							img(src="images/gallery/8.jpg" alt="")
-						.img-w
-							img(src="images/gallery/1.jpg" alt="")
+						img(src="images/gallery/1.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/2.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/1.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/2.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/1.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/2.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/1.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/2.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+						img(src="images/gallery/1.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)")
+
+					.image-popup-container#imagePopup
+						.box-gallerey
+							img(src="" alt="Popup Image" id="popupImage")
+							span(class="close-button" onclick="closeImage()") X
+
 
 		.row.
 include reservation.pug
