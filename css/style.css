@@ -2107,77 +2107,75 @@ h1, h2, h3, h4, h5,
 }
 
 /*------Галерея-----*/
-.box-gallery {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
 
-.paragraph-gallery {
-  height: 300px;
-  width: 1000px;
+.box-gallery {
+  padding: 30px 0;
   position: relative;
 }
 
-.img-gallery {
-  height: 250px;
+.gallery {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-c {
+  width: 33%;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .img-c {
+    width: 50%;
+    height: 200px;
+  }
+}
+
+.img-w {
   position: absolute;
-  left: 200px;
-  offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
-  box-shadow: 1px 1px 3px #0008;
-  transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
-  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
 }
 
-.img-gallery:hover {
-  transform: scale(2);
-  /* on hover, the path gets a bit shorter & flattened & shifted to left/bottom a bit for nicer movement */
-  offset-path: path('m 5 65 q 45-0 90-0 t 90 0 90 0 90-0 90 0');
-  box-shadow: 3px 4px 10px #0006;
-  /* ensures that image gets on top of stack at the start of "popping" animation
-     and gets back at the end of getting back. With smaller value, 2 different transitions would be needed */
-  z-index: 999;
+.img-w img {
+  display: none;
 }
 
-/* 3 images */
-.img-gallery:nth-last-child(3):first-child {
-  offset-distance: 17%;
-}
-.img-gallery:nth-last-child(2):nth-child(2) {
-  offset-distance: 49%;
-}
-.img-gallery:last-child:nth-child(3) {
-  offset-distance: 81%;
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
 }
 
-/* 4 images */
-.img-gallery:nth-last-child(4):first-child {
-  offset-distance: 10%;
-}
-.img-gallery:nth-last-child(3):nth-child(2) {
-  offset-distance: 35%;
-}
-.img-gallery:nth-last-child(2):nth-child(3) {
-  offset-distance: 65%;
-}
-.img-gallery:last-child:nth-child(4) {
-  offset-distance: 90%;
+.img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
 }
 
-/* 5 images */
-.img-gallery:nth-last-child(5):first-child {
-  offset-distance: 0%;
+.img-c.active {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+  /* transform: translateX(-50%); */
 }
-.img-gallery:nth-last-child(4):nth-child(2) {
-  offset-distance: 25%;
+
+.img-c.postactive {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
 }
-.img-gallery:nth-last-child(3):nth-child(3) {
-  offset-distance: 51%;
-}
-.img-gallery:nth-last-child(2):nth-child(4) {
-  offset-distance: 75%;
-}
-.img-gallery:last-child:nth-child(5) {
-  offset-distance: 100%;
+
+.img-c.active.positioned {
+  left: 0 !important;
+  top: 0 !important;
+  transition-delay: 50ms;
 }
