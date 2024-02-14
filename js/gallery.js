@@ -27,7 +27,7 @@ function closeImage() {
   document.body.style.overflow = "auto";
 }
 //закрытие просмотра изображения в любом месте 
-imagePopup.onclick = function() {
-  imagePopup.style.display = "none";
-  document.body.style.overflow = "auto";
-}
+// imagePopup.onclick = function() {
+//   imagePopup.style.display = "none";
+//   document.body.style.overflow = "auto";
+// }

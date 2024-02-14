@@ -2123,7 +2123,7 @@ h1, h2, h3, h4, h5,
   height: 200px;
   cursor: pointer;
   transition: transform 0.2s;
-  
+  object-fit: cover;
 }
 
 .gallery-img:hover {
@@ -2189,6 +2189,42 @@ h1, h2, h3, h4, h5,
 
 .close-button:hover{
   color: red;
+}
+
+/*---кнопка слайдера вперед*/
+.next-button {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-60px);
+  font-size: 60px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3001;
+}
+
+.next-button:hover{
+  color: red;
+  font-weight: 600;
+}
+
+/*---кнопка слайдера назад*/
+.back-button {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-60px);
+  font-size: 60px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3001;
+}
+
+.back-button:hover{
+  color: red;
+  font-weight: 600;
 }
 
 @media (max-width:670px) {
