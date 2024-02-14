@@ -2110,9 +2110,6 @@ h1, h2, h3, h4, h5,
 .gallery {
   width: 100%;
   margin:0 auto;
-  /* display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px; */
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -2126,6 +2123,7 @@ h1, h2, h3, h4, h5,
   height: 200px;
   cursor: pointer;
   transition: transform 0.2s;
+  
 }
 
 .gallery-img:hover {
