@@ -59,8 +59,8 @@ next.addEventListener('click', function() {
 
 
 back.addEventListener('click', function() {
-  let imageSrc = popupImage.src.slice(0, 42); //начало url элемента 
-  let imageSrcEnd = popupImage.src.slice(42, 48); //конец url 10.jpg
+  let imageSrc = popupImage.src.slice(0, 59); //начало url элемента 
+  let imageSrcEnd = popupImage.src.slice(59, 65); //конец url 10.jpg
   let imageNumber = imageSrcEnd.slice(0, -4); //порядковый номер изображения
   let newImages;
 
