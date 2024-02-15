@@ -34,8 +34,8 @@ function closeImage() {
 
 //кнопка слайдер вперёд / назад
 next.addEventListener('click', function() {
-  let imageSrc = popupImage.src.slice(0, 59); //начало url элемента 
-  let imageSrcEnd = popupImage.src.slice(59, 65); //конец url 10.jpg
+  let imageSrc = popupImage.src.slice(0, 58); //начало url элемента 
+  let imageSrcEnd = popupImage.src.slice(58, 64); //конец url 10.jpg
   let imageNumber = imageSrcEnd.slice(0, -4); //порядковый номер изображения
   let newImages;
 
@@ -59,8 +59,8 @@ next.addEventListener('click', function() {
 
 
 back.addEventListener('click', function() {
-  let imageSrc = popupImage.src.slice(0, 59); //начало url элемента 
-  let imageSrcEnd = popupImage.src.slice(59, 65); //конец url 10.jpg
+  let imageSrc = popupImage.src.slice(0, 58); //начало url элемента 
+  let imageSrcEnd = popupImage.src.slice(58, 64); //конец url 10.jpg
   let imageNumber = imageSrcEnd.slice(0, -4); //порядковый номер изображения
   let newImages;
 
