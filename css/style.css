@@ -1995,11 +1995,11 @@ h1, h2, h3, h4, h5,
 }
 
 .text-slider_left {
-    margin-left: 10px !important;
-    margin-right: auto;
-    font-weight: 400;
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
+  margin-left: 10px !important;
+  margin-right: auto;
+  font-weight: 400;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
 }
 
 .text-slider_right {
@@ -2192,39 +2192,38 @@ h1, h2, h3, h4, h5,
 }
 
 /*---кнопка слайдера вперед*/
-.next-button {
+.next-button, .back-button {
   position: absolute;
   top: 50%;
+  transform: translateY(-60px);
+  font-size: 60px;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 3001;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.next-button_right {
   right: 40px;
-  transform: translateY(-60px);
-  font-size: 60px;
-  font-weight: 300;
-  color: #fff;
-  cursor: pointer;
-  z-index: 3001;
 }
 
-.next-button:hover{
-  color: red;
-  font-weight: 600;
-}
-
-/*---кнопка слайдера назад*/
-.back-button {
-  position: absolute;
-  top: 50%;
+.back-button-left {
   left: 40px;
-  transform: translateY(-60px);
-  font-size: 60px;
-  font-weight: 300;
-  color: #fff;
-  cursor: pointer;
-  z-index: 3001;
 }
 
-.back-button:hover{
+.next-button:hover, .back-button:hover{
   color: red;
   font-weight: 600;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.next-button:focus, .back-button:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 
 @media (max-width:670px) {
