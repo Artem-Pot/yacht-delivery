@@ -4,6 +4,8 @@ const next = document.querySelector('.next-button');
 const back = document.querySelector('.back-button');
 const gallery = document.querySelector('.gallery');
 
+console.clear(); //очистка консоли
+
 function showImage(imageSrc) {
     popupImage.src = imageSrc;
     imagePopup.style.display = "block";
@@ -36,7 +38,6 @@ next.addEventListener('click', function() {
   }
 
   popupImage.src = newImages;
-  changingBlockSize();
 })
 
 //кнопка назад слайдера
@@ -54,5 +55,5 @@ back.addEventListener('click', function() {
   }
 
   popupImage.src = newImages;
-  changingBlockSize();
 })
+

@@ -1989,11 +1989,17 @@ h1, h2, h3, h4, h5,
 }/*# sourceMappingURL=style.css.map */
 
 /*--------Пользовательские стили--------------------------------*/
+/*хидер*/
 .img-fluid-logo {
   width: 60px;
   height: auto;
 }
 
+.d-flex-center {
+  align-items: center;
+}
+
+/*Галерея*/
 .text-slider_left {
   margin-left: 10px !important;
   margin-right: auto;
@@ -2103,7 +2109,7 @@ h1, h2, h3, h4, h5,
 /*------Страница о нас-----*/
 
 .site-section-about {
-  margin-top: 140px;
+  margin-top: 60px;
 }
 
 /*------Галерея-----*/
@@ -2251,6 +2257,19 @@ h1, h2, h3, h4, h5,
     top: 140px;
     right: 40px;
   } */
+}
+
+/*Карта */
+.container-map {
+  margin: 20px auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.box-map {
+  max-width: 1140px;
+  height: 400px;
+  margin: 20px auto;
 }
 
 /*-- -----Резерв яхты---------*/
