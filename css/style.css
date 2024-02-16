@@ -2117,7 +2117,7 @@ h1, h2, h3, h4, h5,
   align-items: center; 
 }
 
-/* стиль маленького изображения */
+/* стиль маленького изображения галереи*/
 .gallery-img {
   width: 200px;
   height: 200px;
@@ -2131,7 +2131,7 @@ h1, h2, h3, h4, h5,
   cursor: pointer;
 }
 
-/* Контейнер большого изображения*/
+/* Контейнер большого изображения галереи */
 .image-popup-container {
   display: none;
   position: fixed;
@@ -2149,22 +2149,14 @@ h1, h2, h3, h4, h5,
   width: 100%;
   height: 100%;
   margin: 0 auto;
-}
-/* Контейнер для позиционирования изображения*/
-.box-popup {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3001;
 }
 
-/* Самое Большое изображение */
+/* Самое Большое изображение галереи*/
 #popupImage {
   position: absolute;
-  max-width: 95vw;
-  width: auto;
-  max-height: 95vh;
+  width: 100%;
+  max-width: 100vh;
   height: auto;
   margin: 0 auto;
   top: 50%;
@@ -2172,16 +2164,15 @@ h1, h2, h3, h4, h5,
   transform: translate(-50%, -50%);
   z-index: 3001;
   padding: 10px;
-  background-size: auto;
 }
 
-/* Кнопка закрытия большого изображения */
+/* ----Кнопка закрытия большого изображения галереи ----*/
 .close-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   position: absolute;
   top: 1.1rem;
