@@ -1990,11 +1990,13 @@ h1, h2, h3, h4, h5,
 
 /*--------Пользовательские стили--------------------------------*/
 /*хидер*/
-
-
 .img-fluid-logo {
   width: 60px;
   height: auto;
+}
+
+.header-link span:hover{
+  opacity: 0.6;
 }
 
 .d-flex-center {
@@ -2254,18 +2256,14 @@ h1, h2, h3, h4, h5,
   .heading{
       font-size: 20px;
   }
-
-  /* .close-button {
-    top: 140px;
-    right: 40px;
-  } */
 }
 
 /*Карта */
 .container-map {
   margin: 20px auto;
-  max-width: 1140px;
+  max-width: 1150px;
   width: 100%;
+  padding: 0 15px;
 }
 
 .box-map {
