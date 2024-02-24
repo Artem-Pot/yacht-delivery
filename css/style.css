@@ -644,7 +644,7 @@ h1, h2, h3, h4, h5,
   padding-left: 15px !important;
 }
 
-.sticky-wrapper {
+/* .sticky-wrapper {
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -654,8 +654,8 @@ h1, h2, h3, h4, h5,
   .sticky-wrapper {
     display: none;
   }
-}
-.sticky-wrapper + .site-blocks-cover {
+} */
+/* .sticky-wrapper + .site-blocks-cover {
   margin-top: 140px;
   margin-top: 0px;
 }
@@ -723,7 +723,7 @@ h1, h2, h3, h4, h5,
 .sticky-wrapper .shrink {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-}
+} */
 
 /* Blocks */
 .intro-section {
@@ -1996,6 +1996,9 @@ h1, h2, h3, h4, h5,
   width: 60px;
   height: auto;
 }
+
+
+
 
 .header-link span:hover{
   opacity: 0.6;
