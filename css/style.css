@@ -1997,8 +1997,9 @@ h1, h2, h3, h4, h5,
   height: auto;
 }
 
-
-
+.site-navbar_user {
+  background-color: #1089ff;
+}
 
 .header-link span:hover{
   opacity: 0.6;

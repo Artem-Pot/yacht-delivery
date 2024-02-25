@@ -52,17 +52,17 @@
             <div class="col-6 d-block d-lg-none text-right"><a class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black" href="#"><span class="icon-menu h3"></span></a></div>
           </div>
         </div>
-        <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block" role="banner">
+        <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block site-navbar_user" role="banner">
           <div class="container">
             <div class="d-flex align-items-center">
               <div class="mx-auto">
                 <nav class="site-navigation position-relative text-right">
                   <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
                     <li><a class="nav-link text-left text-left_link" href="index.html">На главную</a></li>
-                    <li><a class="nav-link text-left text-left_link" href="gallery.html">Галерея</a></li>
-                    <li><a class="nav-link text-left text-left_link" href="place.html">Места</a></li>
-                    <li><a class="nav-link text-left text-left_link" href="about.html">О нас</a></li>
-                    <li><a class="nav-link text-left text-left_link" href="contact.html">Контакты</a></li>
+                    <li><a class="nav-link text-left text-left_link" href="#gallery">Галерея</a></li>
+                    <li><a class="nav-link text-left text-left_link" href="#reviews">Отзывы</a></li>
+                    <li><a class="nav-link text-left text-left_link" href="#about">О нас</a></li>
+                    <li><a class="nav-link text-left text-left_link" href="#contact">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -138,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="site-section bg-light site-section-about">
+      <section class="site-section bg-light site-section-about" id="gallery">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-7 text-center title-places">
@@ -157,7 +157,7 @@
           <div class="row"></div>
         </div>
       </section>
-      <main class="site-section bg-light site-section-about">
+      <main class="site-section bg-light site-section-about" id="about">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-7 text-center title-places">
@@ -249,7 +249,7 @@
           </div>
         </div>
       </section>
-      <section class="site-section">
+      <section class="site-section" id="reviews">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-7 text-center">
@@ -348,7 +348,7 @@
           </div>
         </div>
       </section>
-      <section class="site-section bg-light site-section-about">
+      <section class="site-section bg-light site-section-about" id="contact">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-7 text-center title-places">
@@ -373,29 +373,21 @@
         <div class="container">
           <div class="row row-footer">
             <div class="col-lg-3 col-lg-3-footer">
-              <p class="mb-4"><img class="img-fluid img-fluid-logo" src="images/logo.png" alt="Image"></p>
-              <p>Счастливая Звезда  </p>
+              <p class="mb-4"></p><a href="index.html"><img class="img-fluid img-fluid-logo" src="images/logo.png" alt="Image"></a>
               <!--   <p><a href="#">Learn More</a></p> -->
             </div>
             <div class="col-lg-3 col-lg-3-footer">
-              <h3 class="footer-heading"><span>Наша компания</span></h3>
+              <h3 class="footer-heading"><span>Компания</span></h3>
               <ul class="list-unstyled">
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="#!">Новости</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-lg-3-footer">
-              <h3 class="footer-heading"><span>Сервис</span></h3>
+              <h3 class="footer-heading"><span>Прочее</span></h3>
               <ul class="list-unstyled">
-                <li><a href="#!">Информация</a></li>
-                <li><a href="#!">Construction</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-lg-3-footer">
-              <h3 class="footer-heading"><span>Контакты</span></h3>
-              <ul class="list-unstyled">
-                <li><a href="#!">Help Center</a></li>
-                <li><a href="#!">Support Community</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
               </ul>
             </div>
           </div>
