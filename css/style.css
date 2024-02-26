@@ -644,87 +644,6 @@ h1, h2, h3, h4, h5,
   padding-left: 15px !important;
 }
 
-/* .sticky-wrapper {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  background: #fff;
-}
-@media (max-width: 991.98px) {
-  .sticky-wrapper {
-    display: none;
-  }
-} */
-/* .sticky-wrapper + .site-blocks-cover {
-  margin-top: 140px;
-  margin-top: 0px;
-}
-.sticky-wrapper .site-navbar {
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-  background: #1089ff;
-}
-.sticky-wrapper .site-navbar .site-logo a {
-  color: #000;
-}
-.sticky-wrapper .site-navbar .site-menu > li {
-  display: inline-block;
-}
-.sticky-wrapper .site-navbar .site-menu > li > a.active {
-  color: #fff;
-  position: relative;
-}
-.sticky-wrapper .site-navbar .site-menu > li > a.active:after {
-  height: 2px;
-  background: #fff;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  right: 20px;
-}
-.sticky-wrapper .site-navbar .site-menu > li.active > a {
-  color: #fff;
-  position: relative;
-}
-.sticky-wrapper .site-navbar .site-menu > li.active > a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  background: #fff;
-}
-.sticky-wrapper.is-sticky .site-navbar {
-  -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-          box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-}
-.sticky-wrapper.is-sticky .site-navbar .site-logo a {
-  color: #000;
-}
-.sticky-wrapper.is-sticky .site-navbar .site-menu > li {
-  display: inline-block;
-}
-.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
-  padding: 5px 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: inline-block;
-  text-decoration: none !important;
-}
-.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-  color: #fff;
-}
-.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
-  background: #1089ff;
-}
-.sticky-wrapper.is-sticky .site-navbar .site-menu > li.active > a {
-  color: #fff;
-}
-.sticky-wrapper .shrink {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-} */
-
 /* Blocks */
 .intro-section {
   background-size: cover;
@@ -732,7 +651,7 @@ h1, h2, h3, h4, h5,
 }
 .intro-section, .intro-section .container .row {
   height: calc(100vh - 150px);
-
+  min-height: 80vh;
 }
 .intro-section.innerpage, .intro-section.innerpage .container .row {
   height: 75vh;
@@ -2311,6 +2230,7 @@ h1, h2, h3, h4, h5,
   .heading{
       font-size: 20px;
   }
+
   .intro-section p {
     font-size: 0.9rem;
     line-height: 1.3rem;

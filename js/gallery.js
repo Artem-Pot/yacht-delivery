@@ -12,9 +12,10 @@ function showImage(imageSrc) {
 }
 
 //закрытие просмотра изображения
-function closeImage() {
+function closeImage(e) {
   imagePopup.style.display = "none";
   document.body.style.overflow = "auto";
+  window.open("#gallery", "_self"); //возврат в блок галереи после закрытия
 }
 
 //кнопка слайдер вперёд слайдера
