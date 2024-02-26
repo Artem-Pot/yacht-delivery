@@ -1,0 +1,47 @@
+.box-contact-reservation
+    .container.container__contact
+        .box-contact
+            .row.justify-content-center.mb-5
+                .col-md-7.text-center.title-places
+                    h3.heading-92913.text-black.text-center Контакты
+                    ul
+                        li Местоположение: г.Тольятти, ул. Комсомольское ш., 36. Яхт клуб Дружба.
+                        li Телефон: 
+                            a.header-link(href='tel:+79674912039') +7 967 491-20-39
+                        li Email: 
+                            a.header-link(href='mailto:konstantin-sukhov@yandex.ru') konstantin-sukhov@yandex.ru
+            section.container-map
+                h3.heading-92913.text-black.text-center Мы на карте
+                .box-map
+                    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7e62ad59ec621e48cae0c0b470ce4626220f2b4ac9022e3be78a6c16b66d83db&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true")
+        .box-reservation
+            .row.row-reservations
+                .col-md-5-reservations
+                    h3.heading-92913.text-black.text-center Забронировать яхту
+                    form.row(action='https://formspree.io/f/myyrwdyd' method="POST")
+                        .form-group.col-md-6
+                            label(for='input-1') Ваше имя:
+                            input.form-control#input-1(type='text' name="name" placeholder="Артём")
+                        .form-group.col-md-6
+                            label(for='input-3') Дата:
+                            input.form-control#input-3(type='text' name="postal-code" placeholder="10.06.2024")
+                        .form-group.col-md-12
+                            label(for='input-5') Место отправления
+                            select#input-5.form-control(name="attending")
+                                option(value='Гарибальди') Хрящёвка
+                                option(value='Пьяный мыс') Пьяный мыс
+                                option(value='Слобода') Слобода
+                                option(value='Подстёпки') Подстёпки
+                                option(value='Ягодное') ягодное
+                                option(value='Другое') Другое
+                        .form-group.col-md-6
+                            label(for='input-6') Email:
+                            input.form-control#input-6(type='email' name="email" placeholder='info@yandex.ru')
+                        .form-group.col-md-6
+                            label(for='input-7') Телефон:
+                            input.form-control#input-7(type='tel' name="telephone" placeholder='+71234567890')
+                        .form-group.col-md-12
+                            label(for='input-8') Комментарий
+                            textarea#input-8.form-control(name="message", cols='30', rows='5')
+                        .form-group.col-md-12.form-group_user
+                            input.btn.btn-primary.py-3.px-5(type='submit', value='Отправить')

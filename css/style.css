@@ -2124,7 +2124,7 @@ h1, h2, h3, h4, h5,
 /*------Страница о нас-----*/
 
 .site-section-about {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 /*------Галерея-----*/
@@ -2254,11 +2254,52 @@ h1, h2, h3, h4, h5,
   outline: none;
 }
 
+
+/*------------Блок контакты, карта, резерв*/
+.container__contact {
+  margin-top: 80px;
+  display: flex;
+  flex: 1 1 auto;
+  height: auto;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.box-contact {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.box-reservation {
+  margin-top: 20px;
+  max-width: 45%;
+  padding: 0 10px;
+}
+
+
+/*Карта */
+.container-map {
+  margin: 20px auto;
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.box-map {
+  max-width: 1140px;
+  height: 400px;
+  margin: 20px auto;
+}
+
+
 /*-----------футер-----------------*/
 
 .footer__background-color {
   background-color: #c2d7f1 !important;
 }
+
 
 /*-----------------медиа запросы -------------------------*/
 @media (max-width:670px) {
@@ -2276,18 +2317,31 @@ h1, h2, h3, h4, h5,
   }
 }
 
-/*Карта */
-.container-map {
-  margin: 20px auto;
-  max-width: 1150px;
-  width: 100%;
-  padding: 0 15px;
+@media (max-width:770px) {
+  .container__contact {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .box-contact {
+    padding-top: 30px;
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .box-reservation {
+    max-width: 100%;
+    order: 1
+  }
+
+  .form-group_user {
+    text-align: center;
+  }
 }
 
-.box-map {
-  max-width: 1140px;
-  height: 400px;
-  margin: 20px auto;
+.row-footer_user {
+  display: flex;
+  justify-content: start;
 }
 
 /*-- -----Резерв яхты---------*/
@@ -2303,10 +2357,23 @@ h1, h2, h3, h4, h5,
   }
 
   /*футер*/
+
+  .row-footer_user {
+    display: flex;
+    justify-content: center;
+  }
+
   .col-lg-3-footer {
     flex: 0 0 25%;
     max-width: 25%;
   }
+
+  /* .col-lg-3-footer_user {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 33,333%;
+    max-width: 33,333%;
+  } */
 }
 
 @media (max-width:500px) {
@@ -2314,12 +2381,11 @@ h1, h2, h3, h4, h5,
     padding: 0 20px;
   }
 
-  .row-footer {
+  /* .row-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
   }
 
   .col-lg-3.col-lg-3-footer {
@@ -2329,7 +2395,7 @@ h1, h2, h3, h4, h5,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .list-unstyled {
     text-align: center;

@@ -300,90 +300,86 @@
           </div>
         </div>
       </section>
-      <section class="site-section">
-        <div class="container">
-          <div class="row row-reservations">
-            <div class="col-md-7">
-              <p><img class="img-fluid" src="images/hero_1.jpg" alt="Image"></p>
+      <div class="box-contact-reservation">
+        <div class="container container__contact">
+          <div class="box-contact">
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7 text-center title-places">
+                <h3 class="heading-92913 text-black text-center">Контакты</h3>
+                <ul>
+                  <li>Местоположение: г.Тольятти, ул. Комсомольское ш., 36. Яхт клуб Дружба.</li>
+                  <li>Телефон: <a class="header-link" href="tel:+79674912039">+7 967 491-20-39</a></li>
+                  <li>Email: <a class="header-link" href="mailto:konstantin-sukhov@yandex.ru">konstantin-sukhov@yandex.ru</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-5 col-md-5-reservations">
-              <h3 class="heading-92913 text-black">Забронировать яхту</h3>
-              <form class="row" action="https://formspree.io/f/myyrwdyd" method="POST">
-                <div class="form-group col-md-6">
-                  <label for="input-1">Ваше имя:</label>
-                  <input class="form-control" id="input-1" type="text" name="name" placeholder="Артём">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input-3">Дата:</label>
-                  <input class="form-control" id="input-3" type="text" name="postal-code" placeholder="10.06.2024">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="input-5">Место отправления</label>
-                  <select class="form-control" id="input-5" name="attending">
-                    <option value="Гарибальди">Хрящёвка</option>
-                    <option value="Пьяный мыс">Пьяный мыс</option>
-                    <option value="Слобода">Слобода</option>
-                    <option value="Подстёпки">Подстёпки</option>
-                    <option value="Ягодное">ягодное</option>
-                    <option value="Другое">Другое</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input-6">Email:</label>
-                  <input class="form-control" id="input-6" type="email" name="email" placeholder="info@yandex.ru">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input-7">Телефон:</label>
-                  <input class="form-control" id="input-7" type="tel" name="telephone" placeholder="+71234567890">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="input-8">Комментарий</label>
-                  <textarea class="form-control" id="input-8" name="message" cols="30" rows="5"></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                  <input class="btn btn-primary py-3 px-5" type="submit" value="Отправить">
-                </div>
-              </form>
+            <section class="container-map">
+              <h3 class="heading-92913 text-black text-center">Мы на карте</h3>
+              <div class="box-map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7e62ad59ec621e48cae0c0b470ce4626220f2b4ac9022e3be78a6c16b66d83db&amp;amp;width=100%25&amp;amp;height=500&amp;amp;lang=ru_RU&amp;amp;scroll=true"></script>
+              </div>
+            </section>
+          </div>
+          <div class="box-reservation">
+            <div class="row row-reservations">
+              <div class="col-md-5-reservations">
+                <h3 class="heading-92913 text-black text-center">Забронировать яхту</h3>
+                <form class="row" action="https://formspree.io/f/myyrwdyd" method="POST">
+                  <div class="form-group col-md-6">
+                    <label for="input-1">Ваше имя:</label>
+                    <input class="form-control" id="input-1" type="text" name="name" placeholder="Артём">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="input-3">Дата:</label>
+                    <input class="form-control" id="input-3" type="text" name="postal-code" placeholder="10.06.2024">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="input-5">Место отправления</label>
+                    <select class="form-control" id="input-5" name="attending">
+                      <option value="Гарибальди">Хрящёвка</option>
+                      <option value="Пьяный мыс">Пьяный мыс</option>
+                      <option value="Слобода">Слобода</option>
+                      <option value="Подстёпки">Подстёпки</option>
+                      <option value="Ягодное">ягодное</option>
+                      <option value="Другое">Другое</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="input-6">Email:</label>
+                    <input class="form-control" id="input-6" type="email" name="email" placeholder="info@yandex.ru">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="input-7">Телефон:</label>
+                    <input class="form-control" id="input-7" type="tel" name="telephone" placeholder="+71234567890">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="input-8">Комментарий</label>
+                    <textarea class="form-control" id="input-8" name="message" cols="30" rows="5"></textarea>
+                  </div>
+                  <div class="form-group col-md-12 form-group_user">
+                    <input class="btn btn-primary py-3 px-5" type="submit" value="Отправить">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="site-section bg-light site-section-about" id="contact">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-7 text-center title-places">
-              <h3 class="heading-92913 text-black text-center">Контакты</h3>
-              <ul>
-                <li>Местоположение: г.Тольятти, ул. Комсомольское ш., 36. Яхт клуб Дружба.</li>
-                <li>Телефон: <a class="header-link" href="tel:+79674912039">+7 967 491-20-39</a></li>
-                <li>Email: <a class="header-link" href="mailto:konstantin-sukhov@yandex.ru">konstantin-sukhov@yandex.ru</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row"></div>
-        </div>
-      </section>
-      <section class="container-map">
-        <h3 class="heading-92913 text-black text-center">Мы на карте</h3>
-        <div class="box-map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7e62ad59ec621e48cae0c0b470ce4626220f2b4ac9022e3be78a6c16b66d83db&amp;amp;width=100%25&amp;amp;height=500&amp;amp;lang=ru_RU&amp;amp;scroll=true"></script>
-        </div>
-      </section>
+      </div>
       <footer class="footer bg-light footer__background-color">
         <div class="container">
-          <div class="row row-footer">
+          <div class="row row-footer row-footer_user">
             <div class="col-lg-3 col-lg-3-footer">
               <p class="mb-4"></p><a href="index.html"><img class="img-fluid img-fluid-logo" src="images/logo.png" alt="Image"></a>
               <!--   <p><a href="#">Learn More</a></p> -->
             </div>
-            <div class="col-lg-3 col-lg-3-footer">
+            <div class="col-lg-3 col-lg-3-footer col-lg-3-footer_user">
               <h3 class="footer-heading"><span>Компания</span></h3>
               <ul class="list-unstyled">
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#contact">Контакты</a></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-lg-3-footer">
+            <div class="col-lg-3 col-lg-3-footer col-lg-3-footer_user">
               <h3 class="footer-heading"><span>Прочее</span></h3>
               <ul class="list-unstyled">
                 <li><a href="#gallery">Галерея</a></li>
