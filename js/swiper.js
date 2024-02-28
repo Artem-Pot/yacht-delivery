@@ -33,8 +33,8 @@ const swiper = new Swiper('.swiper', {
       onlyInViewport: false,
     },
 
-    mousewheel: { //отключение прокрутки с помощью мыши
-      invert: false,
-    },
-    // autoHeight: true,
+    // mousewheel: { //отключение прокрутки с помощью мыши
+    //   invert: false,
+    // },
+
   });
