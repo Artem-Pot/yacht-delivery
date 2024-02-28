@@ -3,6 +3,10 @@ const swiper = new Swiper('.swiper', {
     grabCursor: true, //изменит курсор для перетаскивания
     slideToClickedSlide: true, //переключает на следующий слайд при клике больше 50% от ширины слайда
     speed: 1000, //скорость переключения слайда
+
+    forceToAxis: false,
+    releaseOnEdges: false,
+    sensitivity: 10,
     effect: 'fade', //эффект прозрачности при смене слайдов
     fadeEffect: {
         crossFade: true, //дополнение к эффекту fade - параллельная смена прозрачности, добавляет плавность
