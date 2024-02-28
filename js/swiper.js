@@ -25,7 +25,7 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-        delay: 2000, //паузка между прокруткой
+        delay: 10000, //паузка между прокруткой
         disableOnInteraction: true, // отключить при ручном переключении
     },
   });

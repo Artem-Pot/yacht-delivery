@@ -5,7 +5,7 @@ html {
 
 body {
   line-height: 1.7;
-  color: gray;
+  color: #656363;
   font-weight: 300;
   font-size: 1.1rem;
 }
@@ -1121,7 +1121,7 @@ h1, h2, h3, h4, h5,
   padding: 1rem 0 0;
   background: #000;
   font-size: 15px;
-  color: #888;
+  color: #000;
 }
 .footer .footer-heading {
   font-size: 16px;
@@ -1933,6 +1933,46 @@ h1, h2, h3, h4, h5,
   align-items: center;
 }
 
+/*------------слайдер верхний---------------*/
+.slider-header {
+  margin: 0 auto;
+  max-width: 100vw;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 100vw;
+  height: calc(100vh - 150px);
+  min-height: 80vh;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #09162a;
+  background-position:  center;
+}
+
+.slider-header__box {
+  position: absolute;
+  top: 50px;
+  margin: 0 50px;
+  padding: 20px;
+  background-color: rgba(16, 137, 255, 0.4);
+  max-width: 50%;
+}
+
+.slider-header__box_right {
+  right: 10px;
+}
+
+.slider-header__box_left {
+  left: 10px;
+}
+
+.slider-header__box h2, .slider-header__box p {
+  color: #fff;
+}
+
 /*Галерея*/
 .text-slider_left {
   margin-left: 10px !important;
@@ -2023,7 +2063,7 @@ h1, h2, h3, h4, h5,
 }
 
 .text-primary {
-  color: #999999 !important;
+  color: #656363 !important;
 }
 
 .img-primary {
@@ -2118,7 +2158,7 @@ h1, h2, h3, h4, h5,
   top: 1.1rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #000;
   cursor: pointer;
   z-index: 3001;
@@ -2211,29 +2251,48 @@ h1, h2, h3, h4, h5,
 }
 
 /*-----------футер-----------------*/
-
 .footer__background-color {
-  background-color: #c2d7f1 !important;
+  background-color: #b0cff5 !important;
 }
 
+.row-footer_user {
+  display: flex;
+  justify-content: start;
+}
+
+.footer__link {
+  color: #000;
+  font-weight: 500;
+}
 /*-----------------медиа запросы -------------------------*/
-@media (max-width:670px) {
-  .gallery{
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      grid-gap: 10px;
-  }
-  .gallery-img{
-      width: 150px;
-      height: 150px;
+@media (max-width:992px) {
+  /*резерв яхты*/
+  .row-reservations {
+    flex-direction: column;
   }
 
-  .heading{
-      font-size: 20px;
+  .col-md-5-reservations {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
-  .intro-section p {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+  /*футер*/
+  .row-footer_user {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-lg-3-footer {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .slider-header__box h2 {
+    font-size: 1.5rem;
+  }
+
+  .slider-header__box p {
+    font-size: 1rem;
   }
 }
 
@@ -2257,85 +2316,53 @@ h1, h2, h3, h4, h5,
   .form-group_user {
     text-align: center;
   }
+
+  .slider-header__box h2 {
+    font-size: 1.4rem;
+  }
+
+  .slider-header__box p {
+    font-size: 0.9rem;
+  }
 }
 
-.row-footer_user {
-  display: flex;
-  justify-content: start;
-}
-
-/*-- -----Резерв яхты---------*/
-@media (max-width:992px) {
-  /*резерв яхты*/
-  .row-reservations {
-    flex-direction: column;
+@media (max-width:670px) {
+  .gallery{
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-gap: 10px;
+  }
+  .gallery-img{
+      width: 150px;
+      height: 150px;
   }
 
-  .col-md-5-reservations {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .heading{
+      font-size: 20px;
   }
 
-  /*футер*/
-
-  .row-footer_user {
-    display: flex;
-    justify-content: center;
+  .intro-section p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
 
-  .col-lg-3-footer {
-    flex: 0 0 25%;
-    max-width: 25%;
+  .slider-header__box {
+    padding: 10px;
   }
-
-  /* .col-lg-3-footer_user {
-    display: flex;
-    justify-content: center;
-    flex: 0 0 33,333%;
-    max-width: 33,333%;
-  } */
+  
 }
 
 @media (max-width:500px) {
+  .slider-header__box {
+    padding: 10px;
+    max-width: 70%;
+  }
+  
   .align-items-center-footer {
     padding: 0 20px;
   }
 
-  /* .row-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .col-lg-3.col-lg-3-footer {
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
-
   .list-unstyled {
     text-align: center;
   }
-}
 
-/*------------слайдер---------------*/
-.slider-header {
-  margin: 0 auto;
-  max-width: 100vw;
 }
-
-.swiper-slide {
-  width: 100vw;
-  height: calc(100vh - 150px);
-  min-height: 80vh;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-color: #09162a;
-}
-
