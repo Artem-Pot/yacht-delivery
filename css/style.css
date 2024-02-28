@@ -5,7 +5,7 @@ html {
 
 body {
   line-height: 1.7;
-  color: #656363;
+  color: #000;
   font-weight: 300;
   font-size: 1.1rem;
 }
@@ -2063,7 +2063,7 @@ h1, h2, h3, h4, h5,
 }
 
 .text-primary {
-  color: #656363 !important;
+  color: #000000 !important;
 }
 
 .img-primary {
@@ -2322,7 +2322,8 @@ h1, h2, h3, h4, h5,
   }
 
   .slider-header__box p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
 }
 
