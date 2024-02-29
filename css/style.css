@@ -475,7 +475,7 @@ h1, h2, h3, h4, h5,
 .site-navbar .site-navigation .site-menu.site-menu-dark > li > a {
   color: #000;
 }
-
+/*----------Мобильное меню------------*/
 .site-mobile-menu {
   width: 300px;
   position: fixed;
