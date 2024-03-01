@@ -1,8 +1,3 @@
-.site-mobile-menu.site-navbar-target
-	.site-mobile-menu-header
-		.site-mobile-menu-close.mt-3
-			span.icon-close2.js-menu-toggle
-	.site-mobile-menu-body
 header.header-top.bg-light
 	.container
 		.row.align-items-center.align-items-center-footer
@@ -32,20 +27,18 @@ header.header-top.bg-light
 						a.header-link(href='mailto:konstantin-sukhov@yandex.ru')
 							span.h4.d-block konstantin-sukhov@yandex.ru
 						span.caption-text
-			.col-6.d-block.d-lg-none.text-right
-				a.d-inline-block.d-lg-none.site-menu-toggle.js-menu-toggle.text-black(href='#')
-					span.icon-menu.h3
-	.site-navbar.py-2.js-sticky-header.site-navbar-target.d-none.pl-0.d-lg-block.site-navbar_user(role='banner')
-		.container
-			.d-flex.align-items-center
-				.mx-auto
-					nav.site-navigation.position-relative.text-right
-						ul.site-menu.main-menu.js-clone-nav.mr-auto.d-none.pl-0.d-lg-block
-							li
-								a.nav-link.text-left.text-left_link(href='#gallery') Галерея
-							li
-								a.nav-link.text-left.text-left_link(href='#reviews') Отзывы
-							li
-								a.nav-link.text-left.text-left_link(href='#about') О нас
-							li
-								a.nav-link.text-left.text-left_link(href='#contact') Контакты
+section.site-navbar_user
+	.container
+		.top-nav
+			input#menu-toggle(type='checkbox')
+			label.menu-button-container(for='menu-toggle')
+				.menu-button
+			ul.menu
+				li
+					a.nav-link.text-left.text-left_link(href='#gallery') Галерея
+				li
+					a.nav-link.text-left.text-left_link(href='#reviews') Отзывы
+				li
+					a.nav-link.text-left.text-left_link(href='#about') О нас
+				li
+					a.nav-link.text-left.text-left_link(href='#contact') Контакты
