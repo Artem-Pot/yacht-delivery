@@ -5,13 +5,14 @@ head
     meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
     meta(name="keywords" content="яхта, прогулки на яхте, романтические прогулки, аренда яхты тольятти, прокат яхты тольятти, яхта тольятти, прогулки на яхте")
     meta(name="description" content="Готовьтесь к романтическим и увлекательным прогулкам на яхте по прекрасным Волжским просторам. Насладитесь неповторимыми видами и атмосферой, погружаясь в мир яхтинга и приключений с Вашей Счастливой звездой")
-    link(href='https://fonts.googleapis.com/css?family=Oswald:400,700Dancing+Script:400,700Muli:300,400', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet")
     link(rel='stylesheet', href='fonts/icomoon/style.css')
     link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/style.css')
-    title Аренда яхты, Счастливая звезда в Тольятти
-    link(rel='icon' href='images/favicon.ico' type='image/x-icon')
     link(rel="stylesheet" href="css/swiper.css")
+    link(href="/favicon.ico" rel="icon")
+    //- link(rel="icon" href="images/logo.ico" type="image/x-icon")
+    title Аренда яхты, Счастливая звезда в Тольятти
     
 body(data-spy="scroll" data-target=".site-navbar-target" data-offset="300")
     .site-wrap
@@ -26,7 +27,11 @@ body(data-spy="scroll" data-target=".site-navbar-target" data-offset="300")
         include ../pug/modules/footer.pug
         include ../pug/modules/fullscreen-loader.pug
 
+        //для меню бургер сделать закрытие, при клике или уходе из блока меню
         // изменить цвет фона разделов
         //подобрать другие логотипы
         //сжать изображения до webp с возможностью загружать jpg если не поддерживается браузером
         //добавить префиксы для стилей
+        //переписать все названия классов и стилей т.к. они в разнобой
+        //структурировать стили по порядку
+

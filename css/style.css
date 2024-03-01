@@ -1990,7 +1990,6 @@ h1, h2, h3, h4, h5,
   position: absolute;
   height: 4px;
   width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
 
@@ -2026,7 +2025,7 @@ h1, h2, h3, h4, h5,
     z-index: 2;
     background: transparent;
     width: 100%;
-    justify-content:flex-end;
+    justify-content: flex-end;
   }
 
   .menu-button-container {
@@ -2084,7 +2083,7 @@ h1, h2, h3, h4, h5,
   }
 
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    border-bottom: 10px solid #444;
   }
 
   .d-lg-block {
