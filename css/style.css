@@ -1393,7 +1393,7 @@ h1, h2, h3, h4, h5,
   color: #fff !important;
 }
 .header-top .quick-contact-icons .text .h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #000;
   margin-bottom: 0;
 }
@@ -2062,7 +2062,7 @@ h1, h2, h3, h4, h5,
           transform: rotate(-405deg);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .top-nav {
     position: absolute;
     top: -75px;
@@ -2101,7 +2101,6 @@ h1, h2, h3, h4, h5,
     width: 100%;
     height: auto;
   }
-
 
   #menu-toggle ~ .menu li {
     height: 0;
@@ -2242,30 +2241,8 @@ h1, h2, h3, h4, h5,
   display: block;
   width: 50px;
   height: 50px;
-}
-
-.flaticon-advantages_sub {
-    background: url(../images/svg/sub.svg) no-repeat center center;
-}
-
-.flaticon-advantages_capitan {
-  background: url(../images/svg/captain.svg) no-repeat center center;
-}
-
-.flaticon-advantages_bbq {
-  background: url(../images/svg/bbq.svg) no-repeat center center;
-}
-
-.flaticon-advantages_alcohol {
-  background: url(../images/svg/alcohol.svg) no-repeat center center;
-}
-
-.flaticon-advantages_gift {
-  background: url(../images/svg/gift.svg) no-repeat center center;
-}
-
-.flaticon-advantages_diving {
-  background: url(../images/svg/diving.svg) no-repeat center center;
+  background-repeat: no-repeat ;
+  background-position: center center;;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -2581,10 +2558,21 @@ h1, h2, h3, h4, h5,
   font-weight: 500;
 }
 /*-----------------медиа запросы -------------------------*/
+
+@media (min-width: 992px) and (min-width: 992px){
+  .col-lg-3_header {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+
+  .col-lg-3_user {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+
+}
+
 @media (max-width:992px) {
-  /*резерв яхты*/
-
-
   .row-reservations {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

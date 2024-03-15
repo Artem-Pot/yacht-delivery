@@ -10,3 +10,9 @@
         accurateTrackBounce:true,
         webvisor:true
    });
+
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-E5NN3YQ7ER');
