@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://happystar63.ru/sitemap.xml

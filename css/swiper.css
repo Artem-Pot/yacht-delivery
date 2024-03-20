@@ -279,6 +279,7 @@
     border: none;
     outline: none;
     background-color: rgba(207, 202, 202, 0.4);
+    border-radius: 5px;
   }
 
   .swiper-button-prev.swiper-button-disabled,
