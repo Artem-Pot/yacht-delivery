@@ -2,7 +2,6 @@ doctype html
 html(lang="ru")
 head
     meta(charset='utf-8')
-    //- meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(name="keywords" content="яхта, прогулки на яхте, романтические прогулки, аренда яхты тольятти, прокат яхты тольятти, яхта тольятти, прогулки на яхте")
     meta(name="description" content="Готовьтесь к романтическим и увлекательным прогулкам на яхте по прекрасным Волжским просторам. Насладитесь неповторимыми видами и атмосферой, погружаясь в мир яхтинга и приключений с Вашей Счастливой звездой")
@@ -21,16 +20,12 @@ body(data-spy="scroll" data-target=".site-navbar-target" data-offset="300")
         include ../pug/modules/gallery_module.pug
         include ../pug/modules/about_module.pug
         include ../pug/modules/advantages.pug
-        include ../pug/modules/information.pug	
+        include ../pug/modules/information.pug
         include ../pug/modules/reviews.pug
         include ../pug/modules/reservation-contact.pug
         include ../pug/modules/footer.pug
+        .btn-up.btn-up_hide
     include ../pug/modules/fullscreen-loader.pug
 
     //для меню бургер сделать закрытие, при клике или уходе из блока меню
-    //сжать изображения до webp с возможностью загружать jpg если не поддерживается браузером
-    //переписать все названия классов и стилей т.к. они в разнобой
-    //структурировать стили по порядку
-    //добавить кнопку вверх
-    
-
+    //сделать слайдер отзывов на свайпере
