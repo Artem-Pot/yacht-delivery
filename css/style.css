@@ -1786,6 +1786,7 @@ h1, h2, h3, h4, h5,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: center;
 }
 
 /*--------------меню гамбургер---------------*/
@@ -2438,13 +2439,13 @@ h1, h2, h3, h4, h5,
 
 @media (min-width: 992px) and (min-width: 992px){
   .col-lg-3_header {
-    flex: 0 0 15%;
-    max-width: 15%;
+    flex: 0 0 8%;
+    max-width: 8%;
   }
 
   .col-lg-3_user {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 30%;
+    max-width: 30%;
   }
 
 }
